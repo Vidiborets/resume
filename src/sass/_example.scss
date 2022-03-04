@@ -40,7 +40,7 @@ body{
   flex-direction: row-reverse;
   width: 1200px;
   background-color: #ffffff;
-  margin: 40px auto;
+  margin: 30px auto;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 .my-proffesion{
@@ -54,7 +54,7 @@ body{
 }
 /* main content */
 .main-contain-section{
-  padding: 100px 90px;
+  padding: 40px 90px 30px 90px;
 }
 .main-contant-title{
   font-style: normal;
@@ -65,7 +65,7 @@ body{
   margin-bottom: 5px;
 }
 .about-me-section{
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .about-me-profession{
   font-style: normal;
@@ -92,7 +92,7 @@ body{
   width: 648px;
 }
 .my-projects-section{
-  margin: 0 0 50px 0;
+  margin: 0 0 0px 0;
 }
 /* List */
 .my-list-numbers{
@@ -108,7 +108,7 @@ body{
   font-size: 14px;
   line-height: 24px;
   color: #595959;
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 0px 0px;
   &:hover,:focus{
     color: #FB6D3A;
   }
@@ -208,7 +208,7 @@ body{
   display: flex;
 }
 .contact-section-link{
-  color:#575F6B;
+  color:#fff;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
