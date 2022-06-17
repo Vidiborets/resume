@@ -1,6 +1,8 @@
 parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="function"==typeof require&&require;function f(t,n){if(!r[t]){if(!e[t]){var i="function"==typeof parcelRequire&&parcelRequire;if(!n&&i)return i(t,!0);if(o)return o(t,!0);if(u&&"string"==typeof t)return u(t);var c=new Error("Cannot find module '"+t+"'");throw c.code="MODULE_NOT_FOUND",c}p.resolve=function(r){return e[t][1][r]||r},p.cache={};var l=r[t]=new f.Module(t);e[t][0].call(l.exports,p,l,l.exports,this)}return r[t].exports;function p(e){return f(p.resolve(e))}}f.isParcelRequire=!0,f.Module=function(e){this.id=e,this.bundle=f,this.exports={}},f.modules=e,f.cache=r,f.parent=o,f.register=function(r,t){e[r]=[function(e,r){r.exports=t},{}]};for(var c=0;c<t.length;c++)try{f(t[c])}catch(e){i||(i=e)}if(t.length){var l=f(t[t.length-1]);"object"==typeof exports&&"undefined"!=typeof module?module.exports=l:"function"==typeof define&&define.amd?define(function(){return l}):n&&(this[n]=l)}if(parcelRequire=f,i)throw i;return f}({"clu1":[function(require,module,exports) {
 
+},{}],"LLK9":[function(require,module,exports) {
+const t=document.querySelector("#hour"),e=document.querySelector('[data-value="hours"]'),a=document.querySelector('[data-value="mins"]'),r=document.querySelector('[data-value="secs"]');class o{constructor({selector:t,targetDate:e,intervalId:a=null}){this.selector=t,this.targetDate=e,this.intervalId=a}start(){this.updateTime(0),this.intervalId=setInterval(()=>{const t=Date.now(),e=this.targetDate-t;this.updateTime(e)},1e3)}stop(){clearInterval(this.intervalId),this.intervalId=null,this.updateTime(0)}updateTime(o){const n=this.pad(Math.floor(o/864e5)),s=this.pad(Math.floor(o%864e5/36e5)),l=this.pad(Math.floor(o%36e5/6e4)),i=this.pad(Math.floor(o%6e4/1e3));t.textContent=`${n}`,e.textContent=`${s}`,a.textContent=`${l}`,r.textContent=`${i}`}pad(t){return String(t).padStart(2,"0")}}const n=new o({selector:"#timer-1",targetDate:new Date(2022,0,1,0,0,0)});n.start();
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss");
-},{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/resume/src.96134c27.js.map
+"use strict";require("./sass/main.scss"),require("./js/task-1");
+},{"./sass/main.scss":"clu1","./js/task-1":"LLK9"}]},{},["Focm"], null)
+//# sourceMappingURL=/resume/src.61178c2a.js.map
